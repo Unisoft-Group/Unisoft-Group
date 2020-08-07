@@ -8,6 +8,14 @@
 </p>
 
 
+Currencies available
+------------
+ - USD - US Dollar
+ - EUR - Euro
+ - GBP - Pound Sterling
+ - CHF - Swiss Franc
+ - JPY - Japan Yen
+ - RUB - Russian Ruble
 
 
 REQUEST
@@ -104,8 +112,8 @@ You will get **response** either **result** or **error**
             "ub": "04.08.2020"
          }
  ```
- - `"cb"` - 
- - `"ub"` - 
+ - `"cb"` - updated date from CBU in format `dd-mm-yy`
+ - `"ub"` - updated date from Universalbank JSC in format `dd-mm-yy`
  
  
  - `"name"` - object contains currency full name in different languages
@@ -192,4 +200,7 @@ If response returns **error** you may get in such format below
  ```
  - `"host"` - Host name
  - `"time_stamp"` - Time stamp of response that data retrieved from host in format `yy-mm-dd h:i:s`
+ 
+ 
+ Last update: 08/07/2020 by "Unisoft"
 
