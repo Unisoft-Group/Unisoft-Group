@@ -23,6 +23,44 @@ All you need send get **request** url below
     
 You will get **response** either **result** or **error**
 
+--------------------------------------------------------------
+
+INFO: We added for specific date getting result of Bank State 
+YOu can use this functionality sending GET request with body below
+
+- `"date"` - specific date in format DD/MM/YYYY
+
+```metadata json
+{
+    "date":"01/11/2021"
+}
+    
+```  
+WARNING: In response we return reponse body with result (object) including only 
+
+ - code,
+ ```metadata json
+ "code": {
+            "local": "02000",
+            "branch": "00996"
+        }
+```  
+      
+ - state objects. 
+
+```metadata json
+  "state": {
+            "code": "O",
+            "message": "открыт"
+        }
+```
+
+! Please ignore 
+  - date 
+  - time_stamp objects
+
+--------------------------------------------------------------
+
 ### Result
 
 ```metadata json
